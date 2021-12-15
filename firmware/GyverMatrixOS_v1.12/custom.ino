@@ -62,69 +62,65 @@
 //  break;
 
 // не забудьте указать количество режимов для корректного переключения с последнего на первый
-#define MODES_AMOUNT 28   // количество кастомных режимов (которые переключаются сами или кнопкой)
+#define MODES_AMOUNT 27   // количество кастомных режимов (которые переключаются сами или кнопкой)
 
 void customModes() {
   switch (thisMode) {
 
-    case 0: fillString("КРАСНЫЙ", CRGB::Red);
+    case 0: fillString("С НОВЫМ ГОДОМ!", CRGB::Red);
       break;
-    case 1: fillString("РАДУГА", 1);
+    case 1: fillString("RGB LED", 2);
       break;
-    case 2: fillString("RGB LED", 2);
+    case 2: madnessNoise();
       break;
-    case 3: madnessNoise();
+    case 3: cloudNoise();
       break;
-    case 4: cloudNoise();
+    case 4: lavaNoise();
       break;
-    case 5: lavaNoise();
+    case 5: plasmaNoise();
       break;
-    case 6: plasmaNoise();
+    case 6: rainbowNoise();
       break;
-    case 7: rainbowNoise();
+    case 7: rainbowStripeNoise();
       break;
-    case 8: rainbowStripeNoise();
+    case 8: zebraNoise();
       break;
-    case 9: zebraNoise();
+    case 9: forestNoise();
       break;
-    case 10: forestNoise();
+    case 10: oceanNoise();
       break;
-    case 11: oceanNoise();
+    case 11: snowRoutine();
       break;
-    case 12: snowRoutine();
+    case 12: sparklesRoutine();
       break;
-    case 13: sparklesRoutine();
+    case 13: matrixRoutine();
       break;
-    case 14: matrixRoutine();
+    case 14: starfallRoutine();
       break;
-    case 15: starfallRoutine();
+    case 15: ballRoutine();
       break;
-    case 16: ballRoutine();
+    case 16: ballsRoutine();
       break;
-    case 17: ballsRoutine();
+    case 17: rainbowRoutine();
       break;
-    case 18: rainbowRoutine();
+    case 18: rainbowDiagonalRoutine();
       break;
-    case 19: rainbowDiagonalRoutine();
+    case 19: fireRoutine();
       break;
-    case 20: fireRoutine();
+    case 20: snakeRoutine();
       break;
-    case 21: snakeRoutine();
+    case 21: tetrisRoutine();
       break;
-    case 22: tetrisRoutine();
+    case 22: mazeRoutine();
       break;
-    case 23: mazeRoutine();
+    case 23: runnerRoutine();
       break;
-    case 24: runnerRoutine();
+    case 24: flappyRoutine();
       break;
-    case 25: flappyRoutine();
+    case 25: arkanoidRoutine();
       break;
-    case 26: arkanoidRoutine();
+    case 26: clockRoutine();
       break;
-    case 27: clockRoutine();
-      break;
-
-
   }
 
 }
