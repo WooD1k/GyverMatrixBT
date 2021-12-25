@@ -62,67 +62,63 @@
 //  break;
 
 // не забудьте указать количество режимов для корректного переключения с последнего на первый
-#define MODES_AMOUNT 27   // количество кастомных режимов (которые переключаются сами или кнопкой)
+#define MODES_AMOUNT 26   // количество кастомных режимов (которые переключаются сами или кнопкой)
 
 void customModes() {
   switch (thisMode) {
-
-    case 0: fillString("С НОВЫМ ГОДОМ!", CRGB::Red);
+    case 0: fillString("С РОЖДЕСТВОМ!", CRGB::Crimson);
       break;
-    case 1: fillString("RGB LED", 2);
+    case 1: madnessNoise();
       break;
-    case 2: madnessNoise();
+    case 2: cloudNoise();
       break;
-    case 3: cloudNoise();
+    case 3: lavaNoise();
       break;
-    case 4: lavaNoise();
+    case 4: plasmaNoise();
       break;
-    case 5: plasmaNoise();
+    case 5: rainbowNoise();
       break;
-    case 6: rainbowNoise();
+    case 6: rainbowStripeNoise();
       break;
-    case 7: rainbowStripeNoise();
+    case 7: zebraNoise();
       break;
-    case 8: zebraNoise();
+    case 8: forestNoise();
       break;
-    case 9: forestNoise();
+    case 9: oceanNoise();
       break;
-    case 10: oceanNoise();
+    case 10: snowRoutine();
       break;
-    case 11: snowRoutine();
+    case 11: sparklesRoutine();
       break;
-    case 12: sparklesRoutine();
+    case 12: matrixRoutine();
       break;
-    case 13: matrixRoutine();
+    case 13: starfallRoutine();
       break;
-    case 14: starfallRoutine();
+    case 14: ballRoutine();
       break;
-    case 15: ballRoutine();
+    case 15: ballsRoutine();
       break;
-    case 16: ballsRoutine();
+    case 16: rainbowRoutine();
       break;
-    case 17: rainbowRoutine();
+    case 17: rainbowDiagonalRoutine();
       break;
-    case 18: rainbowDiagonalRoutine();
+    case 18: fireRoutine();
       break;
-    case 19: fireRoutine();
+    case 19: snakeRoutine();
       break;
-    case 20: snakeRoutine();
+    case 20: tetrisRoutine();
       break;
-    case 21: tetrisRoutine();
+    case 21: mazeRoutine();
       break;
-    case 22: mazeRoutine();
+    case 22: runnerRoutine();
       break;
-    case 23: runnerRoutine();
+    case 23: flappyRoutine();
       break;
-    case 24: flappyRoutine();
+    case 24: arkanoidRoutine();
       break;
-    case 25: arkanoidRoutine();
-      break;
-    case 26: clockRoutine();
+    case 25: clockRoutine();
       break;
   }
-
 }
 
 // функция загрузки картинки в матрицу. должна быть здесь, иначе не работает =)
